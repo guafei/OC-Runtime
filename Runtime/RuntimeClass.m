@@ -140,6 +140,18 @@ void classCheck()
     }
 }
 
+-(BOOL)exampleTagUsage:(NSObject *)arg
+{
+//    if (((long)arg & 1) == 0) return arg->isa == cachedValue;
+//    else return [arg isKindOfClass: cachedValue];
+    
+//    return [arg isKindOfClass: cachedValue];
+    
+    [arg description];
+    
+    return YES;
+}
+
 @end
 
 

@@ -12,6 +12,9 @@
 #import "ForwardingClassOne.h"
 #import "ForwardingClassTwo.h"
 #import "RuntimeClass.h"
+#import "ORM.h"
+
+void ORMTest();
 
 int main(int argc, char *argv[])
 {
@@ -37,16 +40,27 @@ int main(int argc, char *argv[])
 //        [forwardungTwo setDynamicValue:20.0];
 //        [(ForwardingClassOne *)forwardungTwo functionOne];
         
-        RuntimeClass *runTime = [[RuntimeClass alloc] init];
-        [runTime initClass];
+//        RuntimeClass *runTime = [[RuntimeClass alloc] init];
+//        [runTime initClass];
         
+        ORMTest();
         
         return 0;
     }
 
 }
 
-
-
+void ORMTest()
+{
+    NSString * jsonData = @"{\"className\":\"uc\",\"userId\":10,\"name\":\"Ider Zheng\",\"phone\":\"(555)123-4567\",\"address\":\"Earth\"}";
+    NSError *error = nil;
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:[jsonData dataUsingEncoding:NSUTF8StringEncoding]
+                                                    options:NSJSONReadingMutableContainers error:&error];
+    if (!jsonObject || error) {
+        NSCAssert(NO, @"NSJSONSerialization / JSONValue failed");
+    }
+    id obj = [[ORM instance] getObjectWithData:jsonObject];
+    NSLog(@"%@", obj);
+}
 
 

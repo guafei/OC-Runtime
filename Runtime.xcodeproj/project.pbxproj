@@ -17,6 +17,10 @@
 		56C675271A077CE7004D5586 /* ForwardingClassOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C675261A077CE7004D5586 /* ForwardingClassOne.m */; };
 		56C6752A1A077CF5004D5586 /* ForwardingClassTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C675291A077CF5004D5586 /* ForwardingClassTwo.m */; };
 		56C6752D1A08857E004D5586 /* DefineClassWithoutBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C6752C1A08857E004D5586 /* DefineClassWithoutBaseClass.m */; };
+		56DFA5671A41BFF20037C2D2 /* Insideinitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA5661A41BFF20037C2D2 /* Insideinitialize.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56DFA56A1A41C3100037C2D2 /* MainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA5691A41C3100037C2D2 /* MainClass.m */; };
+		56DFA56D1A41C80D0037C2D2 /* ORM.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA56C1A41C80D0037C2D2 /* ORM.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56DFA5701A41C8EC0037C2D2 /* UserContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA56F1A41C8EC0037C2D2 /* UserContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,14 @@
 		56C675291A077CF5004D5586 /* ForwardingClassTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardingClassTwo.m; sourceTree = "<group>"; };
 		56C6752B1A08857E004D5586 /* DefineClassWithoutBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineClassWithoutBaseClass.h; sourceTree = "<group>"; };
 		56C6752C1A08857E004D5586 /* DefineClassWithoutBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineClassWithoutBaseClass.m; sourceTree = "<group>"; };
+		56DFA5651A41BFF20037C2D2 /* Insideinitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Insideinitialize.h; sourceTree = "<group>"; };
+		56DFA5661A41BFF20037C2D2 /* Insideinitialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Insideinitialize.m; sourceTree = "<group>"; };
+		56DFA5681A41C3100037C2D2 /* MainClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainClass.h; sourceTree = "<group>"; };
+		56DFA5691A41C3100037C2D2 /* MainClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainClass.m; sourceTree = "<group>"; };
+		56DFA56B1A41C80D0037C2D2 /* ORM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORM.h; sourceTree = "<group>"; };
+		56DFA56C1A41C80D0037C2D2 /* ORM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORM.m; sourceTree = "<group>"; };
+		56DFA56E1A41C8EC0037C2D2 /* UserContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserContact.h; sourceTree = "<group>"; };
+		56DFA56F1A41C8EC0037C2D2 /* UserContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,14 @@
 				56C675291A077CF5004D5586 /* ForwardingClassTwo.m */,
 				56C6752B1A08857E004D5586 /* DefineClassWithoutBaseClass.h */,
 				56C6752C1A08857E004D5586 /* DefineClassWithoutBaseClass.m */,
+				56DFA5651A41BFF20037C2D2 /* Insideinitialize.h */,
+				56DFA5661A41BFF20037C2D2 /* Insideinitialize.m */,
+				56DFA5681A41C3100037C2D2 /* MainClass.h */,
+				56DFA5691A41C3100037C2D2 /* MainClass.m */,
+				56DFA56B1A41C80D0037C2D2 /* ORM.h */,
+				56DFA56C1A41C80D0037C2D2 /* ORM.m */,
+				56DFA56E1A41C8EC0037C2D2 /* UserContact.h */,
+				56DFA56F1A41C8EC0037C2D2 /* UserContact.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -237,9 +257,13 @@
 			files = (
 				56C6751B1A076D34004D5586 /* NSArray+Swizzle.m in Sources */,
 				56C675211A0775AF004D5586 /* @Selector_Nil.m in Sources */,
+				56DFA56D1A41C80D0037C2D2 /* ORM.m in Sources */,
+				56DFA56A1A41C3100037C2D2 /* MainClass.m in Sources */,
 				56C6752D1A08857E004D5586 /* DefineClassWithoutBaseClass.m in Sources */,
+				56DFA5671A41BFF20037C2D2 /* Insideinitialize.m in Sources */,
 				56C6752A1A077CF5004D5586 /* ForwardingClassTwo.m in Sources */,
 				56C675271A077CE7004D5586 /* ForwardingClassOne.m in Sources */,
+				56DFA5701A41C8EC0037C2D2 /* UserContact.m in Sources */,
 				56C674ED1A071DBF004D5586 /* main.m in Sources */,
 				56C675121A071DE3004D5586 /* RuntimeClass.m in Sources */,
 			);
