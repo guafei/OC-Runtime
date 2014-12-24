@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569EDFAE1A4A576F00D36FCA /* MetaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 569EDFA91A4A576F00D36FCA /* MetaObject.m */; };
+		569EDFAF1A4A576F00D36FCA /* MyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 569EDFAB1A4A576F00D36FCA /* MyProxy.m */; };
+		569EDFB01A4A576F00D36FCA /* RealSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 569EDFAD1A4A576F00D36FCA /* RealSubject.m */; };
 		56C674ED1A071DBF004D5586 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C674EC1A071DBF004D5586 /* main.m */; };
 		56C674F81A071DBF004D5586 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C674F71A071DBF004D5586 /* Images.xcassets */; };
 		56C674FB1A071DBF004D5586 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C674F91A071DBF004D5586 /* LaunchScreen.xib */; };
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		569EDFA81A4A576F00D36FCA /* MetaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaObject.h; sourceTree = "<group>"; };
+		569EDFA91A4A576F00D36FCA /* MetaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaObject.m; sourceTree = "<group>"; };
+		569EDFAA1A4A576F00D36FCA /* MyProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProxy.h; sourceTree = "<group>"; };
+		569EDFAB1A4A576F00D36FCA /* MyProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProxy.m; sourceTree = "<group>"; };
+		569EDFAC1A4A576F00D36FCA /* RealSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealSubject.h; sourceTree = "<group>"; };
+		569EDFAD1A4A576F00D36FCA /* RealSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealSubject.m; sourceTree = "<group>"; };
+		569EDFB11A4A57D900D36FCA /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		56C674E71A071DBF004D5586 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C674EB1A071DBF004D5586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C674EC1A071DBF004D5586 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +113,7 @@
 		56C674E91A071DBF004D5586 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				56C674EC1A071DBF004D5586 /* main.m */,
 				56C674F71A071DBF004D5586 /* Images.xcassets */,
 				56C674F91A071DBF004D5586 /* LaunchScreen.xib */,
 				56C674EA1A071DBF004D5586 /* Supporting Files */,
@@ -126,6 +137,13 @@
 				56DFA56C1A41C80D0037C2D2 /* ORM.m */,
 				56DFA56E1A41C8EC0037C2D2 /* UserContact.h */,
 				56DFA56F1A41C8EC0037C2D2 /* UserContact.m */,
+				569EDFB11A4A57D900D36FCA /* metamacros.h */,
+				569EDFA81A4A576F00D36FCA /* MetaObject.h */,
+				569EDFA91A4A576F00D36FCA /* MetaObject.m */,
+				569EDFAA1A4A576F00D36FCA /* MyProxy.h */,
+				569EDFAB1A4A576F00D36FCA /* MyProxy.m */,
+				569EDFAC1A4A576F00D36FCA /* RealSubject.h */,
+				569EDFAD1A4A576F00D36FCA /* RealSubject.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -134,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				56C674EB1A071DBF004D5586 /* Info.plist */,
-				56C674EC1A071DBF004D5586 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,7 +280,10 @@
 				56DFA5671A41BFF20037C2D2 /* Insideinitialize.m in Sources */,
 				56C6752A1A077CF5004D5586 /* ForwardingClassTwo.m in Sources */,
 				56C675271A077CE7004D5586 /* ForwardingClassOne.m in Sources */,
+				569EDFB01A4A576F00D36FCA /* RealSubject.m in Sources */,
+				569EDFAF1A4A576F00D36FCA /* MyProxy.m in Sources */,
 				56DFA5701A41C8EC0037C2D2 /* UserContact.m in Sources */,
+				569EDFAE1A4A576F00D36FCA /* MetaObject.m in Sources */,
 				56C674ED1A071DBF004D5586 /* main.m in Sources */,
 				56C675121A071DE3004D5586 /* RuntimeClass.m in Sources */,
 			);

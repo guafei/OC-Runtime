@@ -13,6 +13,7 @@
 #import "ForwardingClassTwo.h"
 #import "RuntimeClass.h"
 #import "ORM.h"
+#import "MetaObject.h"
 
 void ORMTest();
 
@@ -43,7 +44,9 @@ int main(int argc, char *argv[])
 //        RuntimeClass *runTime = [[RuntimeClass alloc] init];
 //        [runTime initClass];
         
-        ORMTest();
+//        ORMTest();
+        
+        __unused MetaObject *metaObject = [[MetaObject alloc] initMetaObject_TestingMetaMacro];
         
         return 0;
     }
